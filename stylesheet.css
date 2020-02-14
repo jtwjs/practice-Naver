@@ -1,7 +1,29 @@
-#header-center{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+}
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+.none{
+    display:none;
+}
+header{
+    height:178px;
+}
+.header-center{
     margin:0 auto;
-    width:844.8px;
-    height:100%;
+    width:1080px;
+    height:130px;
 }
 #header-links{
     width:242px;
@@ -23,12 +45,162 @@ font-size:11px;
     font-size:11px;
 }
 #header-logo{
-    width:153px;
+    width: 198px;
+    height: 48px;
     display:inline-block;
+    background:url("images/sp_search.png") -4px -4px no-repeat;
+    vertical-align:middle;
+    position:relative;
+    top:-6px;
+    right:10px;
 
 }
-#header-searchBar{
-    width:400px;
-    display:inline-block;
+
+#header-logo h1{
+    height:48px;
     
+}
+#header-searchBar{
+    width:521px;
+    height:49px;
+    display:inline-block;   
+    vertical-align:middle;
+}
+#header-searchBar fieldset{
+    border:0;
+    position:relative;
+}
+.green_window{
+    display: inline-block;
+    width: 472px;
+    height: 49px;
+    border: 2px solid #03cf5d;/*hex표기법*/
+    background-color: #fff;
+}
+#header-searchBar fieldset input{
+    margin: 12px 0 0 9px;
+    width: 405px;
+    height: 23px;
+    outline: 0;
+    border: 0;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+#header-searchBar fieldset button{
+    position:absolute;
+    top:0;
+    right:0;
+    width:49px;
+    height:49px;
+    border:0;
+    outline:0;
+    background:#03cf5d;
+}
+#search-img{
+    display:inline-block;
+    background:url("images/sp_search.png");
+    width:21px;
+    height:21px;
+    background-position: -4px -60px
+}
+nav{
+    height:47px;
+}
+nav ul{
+    display:inline-block;
+}
+nav li{
+    display:inline-block;
+}
+
+nav li span:first-child{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png);
+    background-repeat: no-repeat;
+    display:inline-block;
+}
+nav ul:first-child li:first-child span:first-child{
+    width:25px;
+    height:16px;
+    background-position: -294px -156px;
+}
+nav ul:first-child li:nth-child(2) span:first-child{
+    width:27px;
+    height:16px;
+    background-position: -234px -234px;
+}
+nav ul:first-child li:nth-child(3) span:first-child{
+    width: 40px;
+    height: 16px;
+    background-position: -50px -182px;
+}
+nav ul:first-child li:nth-child(4) span:first-child{
+    width: 40px;
+    height: 16px;
+    background-position: -128px -130px;}
+
+nav ul:first-child li:nth-child(5) span:first-child{
+    width: 26px;
+    height: 16px;
+    background-position: -111px -260px;
+}
+nav ul:first-child li:nth-child(6) span:first-child{
+    width:25px;
+    height:16px;
+    background-position: -294px -156px;
+}
+nav ul:first-child li:last-child span:first-child{
+    margin-top: -1px;
+    width: 32px;
+    height: 16px;
+    background-position: -200px -182px;
+}
+
+
+nav ul:nth-child(2) li:first-child span:first-child{
+    width: 26px;
+    height: 16px;
+    background-position: -294px -26px;
+}
+nav ul:nth-child(2) li:nth-child(2) span:first-child{
+    width: 28px;
+    height: 16px;
+    background-position: -85px -234px;
+}
+nav ul:nth-child(2) li:nth-child(3) span:first-child{
+    width: 26px;
+    height: 16px;
+    background-position: -255px -260px;
+}
+nav ul:nth-child(2) li:nth-child(4) span:first-child{
+    width: 40px;
+    height: 16px;
+    background-position: -125px -156px;
+}
+nav ul:nth-child(2) li:nth-child(5) span:first-child{
+    width: 27px;
+    height: 16px;
+    background-position: -37px -260px;
+}
+nav ul:nth-child(2) li:nth-child(6) span:first-child{
+    width: 26px;
+    height: 16px;
+    background-position: -219px -260px;
+}
+nav ul:nth-child(2) li:nth-child(7) span:first-child{
+    width: 13px;
+    height: 16px;
+    background-position: -294px -260px;
+}
+nav ul:nth-child(2) li:nth-child(8) span:first-child{
+    width: 27px;
+    height: 16px;
+    background-position: -74px -260px;
+}
+nav ul:nth-child(2) li:last-child span:first-child{
+    display: block;
+    width: 55px;
+    height: 16px;
+    background-position: 0 -130px
 }
