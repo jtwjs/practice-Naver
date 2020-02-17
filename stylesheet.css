@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 a{
     text-decoration:none;
@@ -19,6 +20,8 @@ a{
 }
 header{
     height:178px;
+    border-bottom: 1px solid #d1d8e4;
+    background: #fff;
 }
 .header-center{
     position:relative;
@@ -155,9 +158,13 @@ background-position: -200px 0;
 }
 nav{
     height:47px;
+    border-top: 1px solid #f1f3f6;
+    background: #fff; 
 }
 nav ul{
     display:inline-block;
+    padding-top: 16px;
+    padding-left: 4px;
 }
 nav li{
     display:inline-block;
@@ -231,26 +238,53 @@ nav ul:nth-child(2) li:nth-child(4) span:first-child{
 nav ul:nth-child(2) li:nth-child(5) span:first-child{
     width: 27px;
     height: 16px;
-    background-position: -37px -260px;
+    background-position: -123px -234px;
 }
 nav ul:nth-child(2) li:nth-child(6) span:first-child{
+    width: 27px;
+    height: 16px;
+    background-position: -37px -260px;
+}
+nav ul:nth-child(2) li:nth-child(7) span:first-child{
     width: 26px;
     height: 16px;
     background-position: -219px -260px;
 }
-nav ul:nth-child(2) li:nth-child(7) span:first-child{
+nav ul:nth-child(2) li:nth-child(8) span:first-child{
     width: 13px;
     height: 16px;
     background-position: -294px -260px;
 }
-nav ul:nth-child(2) li:nth-child(8) span:first-child{
+nav ul:nth-child(2) li:last-child span:first-child{
     width: 27px;
     height: 16px;
     background-position: -74px -260px;
 }
-nav ul:nth-child(2) li:last-child span:first-child{
-    display: block;
+nav .an_bar{
+    display:inline-block;
+    margin: 18px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+}
+nav .an_mtxt{
+    display: inline-block;
     width: 55px;
     height: 16px;
-    background-position: 0 -130px
+    background-position: 0 -130px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png);
+    background-repeat: no-repeat;
+    margin-left:14px;
+}
+nav #search-ranking{
+position:absolute;
+top:12px;
+right:10px;
+letter-spacing: -1px;
+    font-size: 13px;
+}
+nav #rank-number{
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
 }
