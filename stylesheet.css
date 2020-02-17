@@ -21,39 +21,82 @@ header{
     height:178px;
 }
 .header-center{
+    position:relative;
     margin:0 auto;
     width:1080px;
     height:130px;
 }
 #header-links{
     width:242px;
+    position:absolute;
+    right:-5px;
 }
 #header-links a{
     display:inline-block;
+    color: #888;
+    letter-spacing: -1px;
+    font-size: 11px;
+    line-height: 22px;
 }
-.al_favorit{
-widtH:116px;
-font-size:11px;
-
+#header-links .al_favorit{
+    float:left;
+    widtH:116px;
+    font-size:11px;
 }
-.al_jr{
+#header-links .al_co{
+    display: inline-block;
+    margin-left: 5px;
+    width: 6px;
+    height: 7px;
+    background-position: -118px -84px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_v200116.png);
+    background-repeat: no-repeat;
+}
+#header-links .al_jr{
+    float:left;
+    padding:5px;
     width:68px;
     font-size:11px;
 }
-.al_happybean{
-    width:44px;
+#header-links .al_happybean{
+    padding:5px;
+    width:34px;
     font-size:11px;
 }
+#header-links a:nth-child(2) span:first-child{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_v200116.png);
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 11px;
+    background-position: -78px -158px;
+    display:block;
+}
+#header-links a:nth-child(3) span:first-child{
+    width: 34px;
+    height: 11px;
+    background-position: -200px -136px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_v200116.png);
+    background-repeat: no-repeat;
+    display:block;
+}
+#header-links a:nth-child(2) span:first-child:hover{
+background-position: -200px 0;
+}
+#header-links a:nth-child(3) span:first-child:hover{
+    background-position: -200px -115px;
+}
+
+
 #header-logo{
     width: 198px;
     height: 48px;
     display:inline-block;
     background:url("images/sp_search.png") -4px -4px no-repeat;
     vertical-align:middle;
-    position:relative;
-    top:-6px;
-    right:10px;
-
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    margin-top: -25px;
 }
 
 #header-logo h1{
@@ -65,10 +108,15 @@ font-size:11px;
     height:49px;
     display:inline-block;   
     vertical-align:middle;
+    position: absolute;
+    top: 50%;
+    left: 219px;
+    margin-top: -20px;
 }
 #header-searchBar fieldset{
     border:0;
     position:relative;
+   
 }
 .green_window{
     display: inline-block;
@@ -119,11 +167,13 @@ nav li span:first-child{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png);
     background-repeat: no-repeat;
     display:inline-block;
+    margin-left:14px;
 }
 nav ul:first-child li:first-child span:first-child{
     width:25px;
     height:16px;
     background-position: -294px -156px;
+    margin:0;
 }
 nav ul:first-child li:nth-child(2) span:first-child{
     width:27px;
