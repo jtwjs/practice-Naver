@@ -285,7 +285,7 @@ nav ul:first-child li:nth-child(4) span:first-child{
     height: 16px;
     background-position: -128px -130px;}
 
-nav ul:first-child li:nth-child(5) span:first-child{
+    .nav-menu ul:first-child li:nth-child(5) span:first-child{
     width: 26px;
     height: 16px;
     background-position: -111px -260px;
@@ -375,17 +375,24 @@ nav .an_mtxt{
 
 }
 nav #search-ranking{
-position:absolute;
-top:12px;
-right:10px;
-letter-spacing: -1px;
     font-size: 13px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: -10px;
+    margin-left: 342px;
+    width: 198px;
+    height: 20px;
+    top: 23px;
+    left: 550px;
+    bottom: 13px;
 }
 nav #rank-number{
     margin-top: -9px;
     color: #00ab33;
     font-size: 16px;
 }
+
+
 main{
     margin: 0 auto;
     padding: 8px 10px 0;
@@ -500,6 +507,57 @@ main .right #main_login{
     border: 1px solid #dee3eb;
     background: #fff;
 }
+main .login_local{
+    padding:15px 25px;
+    width:330px;
+    height:92.6px;
+}
+main .login_txt{
+display:inline-block;
+width:280px;
+height:13.6px;
+color: #888;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+main .login_button{
+display:inline-block;
+width:280px;
+height:37px;
+margin-top:12px;
+}
+main .login_img{
+    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_login_v180727.png);
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 37px;
+    background-position: 0 -47px;
+    display:block;
+}
+main .login_link{
+    display: block;
+    font-size: 12px;
+    line-height: 38px;
+    color:#666;
+}
+
+main .link_join{
+    height:37.6px;
+    float:right;
+    color:#666;
+}
+main .link_join:hover{
+    text-decoration:underline;
+}
+main .link_find a{
+    color:#666;
+}
+main .link_find a:hover{
+    text-decoration:underline;
+}
+
+main.link
 main .right #main_weather{
     position: relative;
     margin: 8px 0;
@@ -535,6 +593,11 @@ main .bottom #shop_section{
     height: 884px;
     border: 1px solid #dee3eb;
     background: #fff;
+}
+main iframe{
+    border:0;
+    width:100%;
+    height:100%;
 }
 main .banner{
     clear: both;
