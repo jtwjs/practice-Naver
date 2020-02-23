@@ -5,8 +5,10 @@
          <title>NAVER</title>
          <link rel="stylesheet" type="text/css" href="stylesheet.css">
          <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?1" />
+         <link rel="stylesheet" type="text/css" href="webfont.css">
     </head>
     <body>
+      <div class="wrap">
          <header>
               <div class="header-center">
                    <div id="header-links">
@@ -182,21 +184,64 @@
                               </ul>
                          </div>
                          <div id="main_news">
-                              <h3><a href="#"><span>뉴스스탠드</span></a></h3>
-                              <h3><span>언론사 목록</span></h3>
-                              <ul>
-                                   <li><img src="images/nsd10519357.png" alt="">
-                                        <a href="#"><span>구독</span></a>
-                                        <a href="#"><span>기사보기</span></a></li>
-                                        
-                                   <li><img src="images/nsd171345162.png" alt="">
-                                        <a href="#"><span>구독</span></a>
-                                        <a href="#"><span>기사보기</span></a></li>
-                                        
-                                   <li><img src="images/nsd91458234.png" alt="">
-                                        <a href="#"><span>구독</span></a>
-                                        <a href="#"><span>기사보기</span></a></li>
-                              </ul>
+                              <div id="news_list">                             
+                                   <h3><a href="#"><span>뉴스스탠드</span><span class="cf_ico"></span></a></h3>
+                                   <div class="menu_list_section1">
+                                        <a href="#" id="entire_press">
+                                             전체 언론사
+                                        </a>
+                                        <span class="as_bar"></span>
+                                        <a href="#"id="my_news">
+                                             MY 뉴스
+                                        </a>
+                                   </div>
+                                   <div class="menu_list_section2">
+                                        <div class="section2_sort">
+                                             <a href="#" class="section2_btn tumb_type">
+                                                  <i class="tumb_img"></i>
+                                                  <span class="blind">이미지형</span>
+                                             </a>
+                                             <a href="#" class="section2_btn list_type">
+                                                  <i class="list_img"></i>
+                                                  <span class="blind">리스트형</span>
+                                             </a>
+                                             <a href="#" class="section2_btn tumb_type">
+                                                  <i class="setting_img"></i>
+                                                  <span class="blind">설정</span>
+                                             </a>
+                                        </div>
+                                        <div class="section2_paging">
+                                             <ul>
+                                                  <li class="ap_list"><a href="#" class="ap_btn">
+                                                       <i class="prev"></i>
+                                                       <span class="blind">이전 페이지</span>
+                                                       </a>
+                                                  </li>
+                                                  <li class="ap_list"><a href="#" class="ap_btn">
+                                                       <i class="next"></i>
+                                                       <span class="blind">다음 페이지</span>
+                                                       </a>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="news_panel">
+                                   <h3 class="blind"><span>언론사 목록</span></h3>
+                                   <ul>
+                                        <li><img src="images/nsd10519357.png" alt="">
+                                             <a href="#"><span>구독</span></a>
+                                             <a href="#"><span>기사보기</span></a></li>
+                                             
+                                        <li><img src="images/nsd171345162.png" alt="">
+                                             <a href="#"><span>구독</span></a>
+                                             <a href="#"><span>기사보기</span></a></li>
+                                             
+                                        <li><img src="images/nsd91458234.png" alt="">
+                                             <a href="#"><span>구독</span></a>
+                                             <a href="#"><span>기사보기</span></a></li>
+                                   </ul>
+                              </div>
                         </div>
                     </div>
                </div>
@@ -236,6 +281,7 @@
                                    <span class="ac_bicon" id="whole-subject-img"></span>
                               </button>
                               <div id="subject-list">
+                                   <div class="opacity op_left"></div>
                                    <ul>
                                         <li>리빙</li>
                                         <li>푸드</li>
@@ -243,7 +289,7 @@
                                         <li>자동차</li>
                                         <li>패션뷰티</li>
                                         <li>부모i</li>
-                                        <li>건강</li>
+                                        <li class="highlight">건강</li>
                                         <li>웹툰</li>
                                         <li>게임</li>
                                         <li>TV연예</li>
@@ -251,6 +297,7 @@
                                         <li>영화</li>
                                         <li>책문화</li>
                                    </ul>
+                                   <div class="opacity op_right"></div>
                               </div>
                               <button id="subject-prev">
                                    <span class="blind">
@@ -283,48 +330,105 @@
                </main>
                <footer>
                     <div class="notice">
-                         <h3><a href="#">공지사항</a></h3>
+                         <div class="area_notice">
+                              <h3><a href="#" class="notice_notice">공지사항</a></h3>
+                              <a href="#" class="notice_content">네이버 '개인정보' 변경에 대한 안내 말씀 드립니다.</a>
+                         </div>
+                         <div class="area_service">
+                              <a href="#" class="as_o">
+                                   서비스전체보기
+                                   <span class="ico_all"></span>
+                              </a>
+                              
+                         </div>
                     </div>
                     <div class="aside">
-                         <h3>Createors</h3>
-                         <ul>
-                              <li><a href="#"><span>크리에이터</span></a></li>
-                              <li><a href="#"><span>스몰비즈니스</span></a></li>
-                         </ul>
-                         <h3>Partners</h3>
-                         <ul>
-                              <li><a href="#"><span>비즈니스 · 광고</span></a></li>
-                              <li><a href="#"><span>스토어 개설</span></a></li>
-                              <li><a href="#"><span>지역업체 등록</span></a></li>
-                         </ul>
-                         <h3>Developers</h3>
-                         <ul>
-                              <li><a href="#"><span>네이버 개발자센터</span></a></li>
-                              <li><a href="#"><span>오픈 API</span></a></li>
-                              <li><a href="#"><span>오픈소스</span></a></li>
-                              <li><a href="#"><span>네이버 D2</span></a></li>
-                              <li><a href="#"><span>네이버 D2SF</span></a></li>
-                              <li><a href="#"><span>네이버 랩스</span></a></li>
-                         </ul>
+                         <div class="area_user">
+                              <div class="au_wrap">
+                                   <h3 class="au_tit">Createors</h3>
+                                   <ul class="au_l">
+                                        <li class="au_item"><a  class="au_a"href="#"><span>크리에이터</span></a></li>
+                                        <li class="au_item">
+                                             <span class="au_bar"></span>
+                                             <a class="au_a"href="#"><span>스몰비즈니스</span></a></li>
+                                   </ul>
+                              </div>
+                              <div class="au_wrap">
+                                   <h3 class="au_tit">Partners</h3>
+                                   <ul class="au_l">
+                                        <li class="au_item"><a class="au_a"href="#"><span>비즈니스 · 광고</span></a></li>
+                                        <li class="au_item">
+                                             <span class="au_bar"></span>
+                                             <a class="au_a"href="#"><span>스토어 개설</span></a></li>
+                                        <li class="au_item">
+                                             <span class="au_bar"></span>
+                                             <a class="au_a"href="#"><span>지역업체 등록</span></a></li>
+                                   </ul>
+                              </div>
+                              <div class="au_wrap">
+                                   <h3 class="au_tit">Developers</h3>
+                                   <ul class="au_l">
+                                        <li class="au_item">
+                                             <a class="au_a"href="#"><span>네이버 개발자센터</span></a></li>
+                                        <li class="au_item">
+                                             <span class="au_bar"></span>
+                                             <a class="au_a"href="#"><span>오픈 API</span></a></li>
+                                        <li class="au_item">
+                                             <span class="au_bar"></span>
+                                             <a class="au_a"href="#"><span>오픈소스</span></a></li>
+                                        <li class="au_item">
+                                             <span class="au_bar"></span>
+                                             <a class="au_a"href="#"><span>네이버 D2</span></a></li>
+                                        <li class="au_item">
+                                             <span class="au_bar"></span>
+                                             <a class="au_a"href="#"><span>네이버 D2SF</span></a></li>
+                                        <li class="au_item">
+                                              <span class="au_bar"></span>
+                                              <a class="au_a"href="#"><span>네이버 랩스</span></a></li>
+                                   </ul>
+                              </div>
+                         </div>
                     </div>
                     <address class="address">
-                         <h3>네이버 정책 및 약관</h3>
-                         <ul>
-                              <li><a href="#"><span>회사소개</span></a></li>
-                              <li><a href="#"><span>인재채용</span></a></li>
-                              <li><a href="#"><span>제후제안</span></a></li>
-                              <li><a href="#"><span>이용약관</span></a></li>
-                              <li><a href="#"><strong>개인정보처리방침</strong></a></li>
-                              <li><a href="#"><span>청소년보호정책</span></a></li>
-                              <li><a href="#"><span>네이버 정책</span></a></li>
-                              <li><a href="#"><span>고객센터</span></a></li>
-                         </ul>
-                         ⓒ 
-                         <a href="#" target="_blank">NAVER Copr.</a>
+                         <div class="area_terms">
+                              <h3 class="blind">네이버 정책 및 약관</h3>
+                              <ul class="at_l">
+                                   <li>
+                                        <a href="#">회사소개</a>
+                                   </li>
+                                   <li>
+                                        <span class="at_bar"></span>
+                                        <a href="#">인재채용</a></li>
+                                   <li>
+                                        <span class="at_bar"></span>
+                                        <a href="#">제후제안</a></li>
+                                   <li>
+                                        <span class="at_bar"></span>
+                                        <a href="#">이용약관</a>
+                                   </li>
+                                   <li>
+                                        <span class="at_bar"></span>
+                                        <a href="#"><strong>개인정보처리방침</strong></a></li>
+                                   <li>
+                                        <span class="at_bar"></span>
+                                        <a href="#">청소년보호정책</a></li>
+                                   <li>
+                                        <span class="at_bar"></span>
+                                        <a href="#">네이버 정책</a></li>
+                                   <li>
+                                        <span class="at_bar"></span>
+                                        <a href="#"><span>고객센터</span></a></li>
+                              </ul>
+                              <div class="at_cr">
+                              ⓒ 
+                              <a class="copr" href="#" target="_blank"><strong>NAVER Copr.</strong></a>
+                              </div>
+                         </div>
                     </address>
               <div>
                    
               </div>
          </footer>
+     </div>
     </body>
     </html>

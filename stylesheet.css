@@ -24,6 +24,9 @@ ul{
 .none{
     display:none;
 }
+.wrap{
+    background: #f2f4f7;
+}
 header{
     height:178px;
     border-bottom: 1px solid #d1d8e4;
@@ -285,7 +288,7 @@ nav ul:first-child li:nth-child(4) span:first-child{
     height: 16px;
     background-position: -128px -130px;}
 
-    .nav-menu ul:first-child li:nth-child(5) span:first-child{
+nav ul:first-child li:nth-child(5) span:first-child{
     width: 26px;
     height: 16px;
     background-position: -111px -260px;
@@ -356,7 +359,7 @@ nav ul:nth-child(2) li:last-child span:first-child{
 nav ul{
     box-sizing:border-box;
 }
-nav .an_bar{
+.an_bar{
     display:inline-block;
     margin: 18px 16px 0;
     width: 1px;
@@ -495,6 +498,160 @@ main .left #main_news{
     background: #fff;
 
 }
+#news_list{
+    position: relative;
+    z-index: 10;
+    height: 44px;
+    border-bottom: 1px solid #ebeef3;    
+}
+#news_list h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 13px 0 0 16px;
+}
+#news_list h3 a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    line-height: 20px;
+}
+.menu_list_section1{
+    position: absolute;
+    top: 0;
+    left: 102px;
+    padding: 13px 0;
+    height: 18px;
+}
+.menu_list_section1 a{
+    display: block;
+    color: #666;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    line-height: 20px;
+    
+}
+#entire_press{
+    color:#000;
+ float:left;
+    
+}
+.as_bar{
+    display: block;
+    margin: 2px 15px 0;
+    width: 1px;
+    height: 15px;
+    background-color: #ebeef3;
+    float:left;
+}
+#my_news{
+    display: block;
+    color: #666;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    line-height: 20px;
+    float:left;
+}
+#my_news:hover{
+    color:#000;
+  float:left;
+}
+.menu_list_section2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+}
+.section2_sort{
+    float:left;
+}
+.section2_btn{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 32px;
+    height: 44px;
+}
+.tumb_img{
+    width: 18px;
+    height: 18px;
+    background-position: -56px -141px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_newscast.png);
+    background-repeat: no-repeat;
+}
+.list_img{
+    width: 18px;
+    height: 18px;
+    background-position: 0 -169px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_newscast.png);
+    background-repeat: no-repeat;
+}
+.list_img:hover{
+    background-position: -168px -141px;
+}
+.setting_img{
+    width: 18px;
+    height: 18px;
+    background-position: -28px -141px; 
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_newscast.png);
+    background-repeat: no-repeat;
+}
+.setting_img:hover{
+    background-position: -140px -141px;
+}
+.section2_paging{
+    float:left;
+}
+.section2_paging ul{
+    float:left;
+}
+.section2_paging li{
+    border-left: 1px solid #ebeef3; 
+    float:left;
+}
+.section2_sort i{
+    display:inline-block;
+    margin-top:13px;
+}
+.section2_paging i{
+    display: inline-block;
+    margin: 14px 0 0 18px;
+}
+.ap_btn{
+    display: block;
+    width: 44px;
+    height: 44px;
+}
+.prev{
+    width: 8px;
+    height: 16px;
+    background-position: -200px -78px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_newscast.png);
+    background-repeat: no-repeat;
+}
+.prev:hover{
+    background-position: -200px -52px;
+}
+.next{
+    width: 8px;
+    height: 16px;
+    background-position: -200px -26px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_newscast.png);
+    background-repeat: no-repeat;
+}
+.next:hover{
+    background-position: -200px 0px;
+}
 main .right{
     position: relative;
     float: right;
@@ -557,7 +714,6 @@ main .link_find a:hover{
     text-decoration:underline;
 }
 
-main.link
 main .right #main_weather{
     position: relative;
     margin: 8px 0;
@@ -569,7 +725,7 @@ main .right #main_subad{
     position: relative;
     height: 152px;
     border: 1px solid #dee3eb;
-    background: #fff;
+    background: #000;
 }
 main .bottom{
     clear: both;
@@ -635,11 +791,50 @@ border-right:1px solid #dee3eb;
     background-position: -320px -52px;
 
 }
-main .bottom #subject-list{
+#subject-list{
+    position:relative;
     width:603px;
+    height:45px;
+    overflow:hidden;
+    
+    white-space:nowrap;    
+}
+#subject-list ul{
+    width:1000px;
+}
+.opacity{
+    opacity:0.5;
+    background:white;
+}
+.opacity.op_left{
+    position:absolute;
+    top:0;
+    left:0;
+    height:45px;
+    width:15px;
+}
+.opacity.op_right{
+    position:absolute;
+    top:0;
+    right:0;
+    height:45px;
+    width:15px;
 }
 #subject-list li{
     float:left;
+    margin-right: 10px;
+    padding: 14px 7px 0;
+    color: #666;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+}
+#subject-list  li.highlight{
+    border-bottom: 3px solid #00c73c;
+    color: #00b336;
+    height:45px;
 }
 main .bottom #subject-prev{
 
@@ -665,6 +860,8 @@ main .banner{
     padding-top: 8px;
     text-align: left;
     zoom: 1;
+    display:inline-block;
+    width:100%;
 }
 main .banner #banner_left{
     position: relative;
@@ -687,12 +884,67 @@ footer{
     border-top: 1px solid #e3e7ee;
     background: #fff;
     text-align: left;
+    
 }
 footer .notice{
     position: relative;
     border-bottom: 1px solid #f1f3f6
 }
-footer .aside{
+.area_notice{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 16px;
+    width: 1080px;
+    height: 29px;
+    zoom: 1;
+    box-sizing:content-box;
+    
+}
+.area_notice h3{
+    float: left;
+    margin-right: 13px;
+    letter-spacing: -1px;}
+.notice_notice{
+    color: #000;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 16px;
+}
+.notice_content{
+    color: #000;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 16px;
+}
+.notice_content:hover{
+    text-decoration:underline;
+}
+.area_service{
+    position: absolute;
+    top: 16px;
+    right: 50%;
+    margin-right: -540px
+}
+.as_o{
+    color: #000;
+    vertical-align: top;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    
+}
+.ico_all{
+    display: inline-block;
+    margin-left: 7px;
+    width: 5px;
+    height: 11px;
+    background-position: -182px -60px;
+    vertical-align: -2px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_v200220.png);
+    background-repeat: no-repeat;
+}
+.aside{
     position: relative;
     margin: 0 auto;
     width: 1080px;
@@ -702,5 +954,99 @@ footer .aside{
 footer .address{
     position: relative;
     border-top: 1px solid #f1f3f6;
+}
+.aside h3{
+    display:block;
+}
+.area_user{
+    position: absolute;
+    top: 23px;
+    left: 0;
+}
+.au_wrap{
+padding-top:7px;
+overflow:hidden;
+}
+.au_wrap:first-child{
+    padding-top:0;
+}
+.au_tit{
+    float: left;
+    min-width: 91px;
+    color: #000;
+    font-size: 13px;
+}
+.au_l{
+    position: relative;
+    float: left;
+    width: 650px;
+    zoom: 1;
+}
+.au_item{
+    float: left;
+    margin: 1px 0 0 14px
+}
+.au_a{
+    color: #888;
+    vertical-align: top;
+    letter-spacing: -1px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.au_bar{
+    display: inline-block;
+    margin-right: 14px;
+    width: 1px;
+    height: 11px;
+    background: #e8e9ec;
+    vertical-align: -2px;
+}
+.area_terms{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 24px;
+    width: 1080px;
+    height: 132px;
+    zoom: 1;
+}
+.at_l{
+    position: relative;
+    float: left;
+    margin-right:14px;
+    zoom: 1;
+    font-style:normal;
+}
+.at_l li:first-child{
+    margin-left:0;
+}
+.at_l li{
+float:left;
+margin-left: 14px;
+}
 
+.at_bar{
+    display: inline-block;
+    margin-right: 14px;
+    width: 1px;
+    height: 11px;
+    background: #e8e9ec;
+    vertical-align: -2px;
+}
+.at_l a{
+    color: #888;
+    vertical-align: top;
+    letter-spacing: -1px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.copr{
+    color:#444;
+}
+.at_cr{
+    float: left;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    font-style:normal;
 }
